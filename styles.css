@@ -32,3 +32,18 @@ footer a{
 
 
 }
+.skills {
+    margin-left:0 0;
+
+}
+
+.skills ul {
+    list-style-type: disc;       /* bullet points */
+    display: flex;               /* make items horizontal */
+    gap: 1rem;                   /* space between items */
+    padding-left: 1rem;         /* indentation for bullets */
+}
+
+.skills li {
+    white-space: nowrap;        /* prevents items from wrapping */
+}
