@@ -17,6 +17,12 @@
    
 
 }
+.experience {
+flex: 0 1 calc(80% - 20px); /* 3 items per row */
+    /* box-sizing: border-box; */
+    border: 1px solid white;
+    padding: 15px;
+}
 .projects {
     flex: 0 1 calc(50% - 20px); /* 3 items per row */
     /* box-sizing: border-box; */
@@ -47,3 +53,4 @@ footer a{
 .skills li {
     white-space: nowrap;        /* prevents items from wrapping */
 }
+
