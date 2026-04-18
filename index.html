@@ -8,14 +8,343 @@
             Portfolio
         </title>
     </head>
-    <body>
+    <body style="background-color: rgb(158, 180, 240);">
+        
+        <div class="options-container button-text-font">
+
+        <nav class="pink-button">
+        <a href="index.html" class="active">Home</a>
+            </nav>
+                <nav class="pink-button">
+        <a href="projects.html" >Projects</a>
+        </nav>
+        <nav class="pink-button">
+        <a href="research.html">Experience and Research</a>
+        </nav>
+        <nav class="pink-button">
+        <a href="publication.html">Publication and Thesis</a>
+        </nav>
+        <nav class="pink-button">
+        <a href="contact.html">Contact</a>
+        </nav>
+        </div>
+
         <div class="intro">
             <h2>Hi!</h2>
-            <p>I am Sabdha, a grad student at New Jersey Institute of Technology. I am passionate about solving real world problems using machine learning models. I am intrigued by intersection of machine learning and other emerging fields like quantum computing. </p>
+            <p>I am Sabdha, a Masters student at New Jersey Institute of Technology. <br>
+            I am passionate about solving real world problems using machine learning models. I am intrigued by intersection of machine learning and other emerging fields like quantum computing. </p>
         </div>
-        
+
+
 <div class="try">
-    <div class="experience"> <h3>Experience</h3>
+<!-- <style>
+  .suncatcher-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    gap: 12px;
+  }
+  
+  .suncatcher {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .string {
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, rgba(100, 100, 100, 0.4));
+    margin: 0 auto;
+  }
+  
+  /* Varying string lengths */
+  .suncatcher:nth-child(1) .string { height: 40px; }
+  .suncatcher:nth-child(2) .string { height: 70px; }
+  .suncatcher:nth-child(3) .string { height: 55px; }
+  .suncatcher:nth-child(4) .string { height: 90px; }
+  .suncatcher:nth-child(5) .string { height: 45px; }
+  .suncatcher:nth-child(6) .string { height: 80px; }
+  .suncatcher:nth-child(7) .string { height: 60px; }
+  
+  .crystal {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    animation: swing 3s ease-in-out infinite;
+    transform-origin: top center;
+    filter: drop-shadow(0 2px 8px rgba(138, 43, 226, 0.5));
+  }
+  
+  /* Star shape */
+  .star {
+    background: linear-gradient(135deg, 
+      rgba(255, 105, 180, 0.95) 0%,
+      rgba(138, 43, 226, 0.95) 50%,
+      rgba(255, 20, 147, 0.95) 100%);
+    clip-path: polygon(
+      50% 0%, 
+      61% 35%, 
+      98% 35%, 
+      68% 57%, 
+      79% 91%, 
+      50% 70%, 
+      21% 91%, 
+      32% 57%, 
+      2% 35%, 
+      39% 35%
+    );
+    box-shadow: 
+      0 0 25px rgba(255, 20, 147, 0.7),
+      0 0 40px rgba(138, 43, 226, 0.4),
+      inset 0 0 15px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(138, 43, 226, 0.6);
+  }
+  
+  /* Moon shape */
+  .moon {
+    background: linear-gradient(135deg, 
+      rgba(255, 215, 0, 0.95) 0%,
+      rgba(255, 165, 0, 0.95) 50%,
+      rgba(255, 140, 0, 0.95) 100%);
+    clip-path: circle(50% at 40% 50%);
+    box-shadow: 
+      0 0 25px rgba(255, 215, 0, 0.7),
+      0 0 40px rgba(255, 165, 0, 0.4),
+      inset 0 0 15px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 165, 0, 0.6);
+  }
+  
+  /* Heart shape */
+  .heart {
+    background: linear-gradient(135deg, 
+      rgba(255, 69, 0, 0.95) 0%,
+      rgba(220, 20, 60, 0.95) 50%,
+      rgba(255, 0, 127, 0.95) 100%);
+    clip-path: path('M20,8 C20,4 16,0 12,0 C8,0 6,2 6,4 C6,2 4,0 0,0 C-4,0 -8,4 -8,8 C-8,16 4,28 12,36 C20,28 32,16 32,8 Z');
+    transform: scale(0.8);
+    box-shadow: 
+      0 0 25px rgba(255, 0, 127, 0.7),
+      0 0 40px rgba(220, 20, 60, 0.4),
+      inset 0 0 15px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(220, 20, 60, 0.6);
+  }
+  
+  /* Diamond shape */
+  .diamond {
+    background: linear-gradient(135deg, 
+      rgba(0, 191, 255, 0.95) 0%,
+      rgba(30, 144, 255, 0.95) 50%,
+      rgba(65, 105, 225, 0.95) 100%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    box-shadow: 
+      0 0 25px rgba(30, 144, 255, 0.7),
+      0 0 40px rgba(0, 191, 255, 0.4),
+      inset 0 0 15px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(30, 144, 255, 0.6);
+  }
+  
+  /* Circle shape */
+  .circle {
+    background: linear-gradient(135deg, 
+      rgba(148, 0, 211, 0.95) 0%,
+      rgba(138, 43, 226, 0.95) 50%,
+      rgba(153, 50, 204, 0.95) 100%);
+    clip-path: circle(50%);
+    box-shadow: 
+      0 0 25px rgba(148, 0, 211, 0.7),
+      0 0 40px rgba(138, 43, 226, 0.4),
+      inset 0 0 15px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(138, 43, 226, 0.6);
+  }
+  
+  /* Hexagon shape */
+  .hexagon {
+    background: linear-gradient(135deg, 
+      rgba(50, 205, 50, 0.95) 0%,
+      rgba(34, 139, 34, 0.95) 50%,
+      rgba(0, 128, 0, 0.95) 100%);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%);
+    box-shadow: 
+      0 0 25px rgba(50, 205, 50, 0.7),
+      0 0 40px rgba(34, 139, 34, 0.4),
+      inset 0 0 15px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(34, 139, 34, 0.6);
+  }
+  
+  /* Teardrop shape */
+  .teardrop {
+    background: linear-gradient(135deg, 
+      rgba(255, 20, 147, 0.95) 0%,
+      rgba(199, 21, 133, 0.95) 50%,
+      rgba(219, 112, 147, 0.95) 100%);
+    clip-path: path('M20,40 Q20,20 20,10 A10,10 0 1,1 20,10 Q20,20 20,40 Z');
+    box-shadow: 
+      0 0 25px rgba(255, 20, 147, 0.7),
+      0 0 40px rgba(199, 21, 133, 0.4),
+      inset 0 0 15px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(199, 21, 133, 0.6);
+  }
+  
+  /* Animation delays for each charm */
+  .suncatcher:nth-child(1) .crystal { animation-delay: 0s; }
+  .suncatcher:nth-child(2) .crystal { animation-delay: 0.3s; }
+  .suncatcher:nth-child(3) .crystal { animation-delay: 0.6s; }
+  .suncatcher:nth-child(4) .crystal { animation-delay: 0.9s; }
+  .suncatcher:nth-child(5) .crystal { animation-delay: 1.2s; }
+  .suncatcher:nth-child(6) .crystal { animation-delay: 1.5s; }
+  .suncatcher:nth-child(7) .crystal { animation-delay: 1.8s; }
+  
+  .sparkle {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: radial-gradient(circle, 
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 215, 0, 0.9) 50%,
+      transparent 70%);
+    border-radius: 50%;
+    animation: sparkle 2s ease-in-out infinite;
+    box-shadow: 
+      0 0 15px rgba(255, 255, 255, 1),
+      0 0 25px rgba(255, 215, 0, 0.8);
+  }
+  
+  .sparkle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  }
+  
+  .sparkle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    width: 20px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  }
+  
+  .sparkle:nth-child(1) {
+    top: 5px;
+    left: -15px;
+    animation-delay: 0s;
+  }
+  
+  .sparkle:nth-child(2) {
+    top: 25px;
+    right: -18px;
+    animation-delay: 0.7s;
+  }
+  
+  .sparkle:nth-child(3) {
+    bottom: 5px;
+    left: -8px;
+    animation-delay: 1.4s;
+  }
+  
+  @keyframes swing {
+    0%, 100% {
+      transform: rotate(-8deg);
+    }
+    50% {
+      transform: rotate(8deg);
+    }
+  }
+  
+  @keyframes sparkle {
+    0%, 100% {
+      opacity: 0;
+      transform: scale(0) rotate(0deg);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.2) rotate(180deg);
+    }
+  }
+</style> -->
+
+<div class="suncatcher-container">
+  <div class="suncatcher">
+    <div class="string"></div>
+    <div class="crystal star">
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+    </div>
+  </div>
+  <div class="suncatcher">
+    <div class="string"></div>
+    <div class="crystal moon">
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+    </div>
+  </div>
+  <div class="suncatcher">
+    <div class="string"></div>
+    <div class="crystal heart">
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+    </div>
+  </div>
+  <div class="suncatcher">
+    <div class="string"></div>
+    <div class="crystal diamond">
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+    </div>
+  </div>
+  <div class="suncatcher">
+    <div class="string"></div>
+    <div class="crystal circle">
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+    </div>
+  </div>
+  <div class="suncatcher">
+    <div class="string"></div>
+    <div class="crystal hexagon">
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+    </div>
+  </div>
+  
+</div>
+
+     <div class="education"> <h3>Education</h3>
+
+                    <h4>New Jersey Institute of Technology---------------- 2024 - Present</h4>
+                    <p>Masters of Sciences in Data Science Computational Track (GPA: 3.8) <br>
+                    Core Courses:</p>
+                    <ul>
+                        <li>Deep Learning, Computer Vision</li>
+                        <li>Machine Learning, Database Management Design</li>
+                        <li>NLP, Big Data</li>
+                        <li>Python, Applied Statistics</li>
+                    </ul>
+    
+                    <h4>Mahindra University, Hyderabad, India--------------- 2020 - 2024 </h4>
+                    <p>Bachelors of Technology in Computation and Mathematics (GPA:3.1)
+                    </p>
+    
+    </div>
+        <!-- <hr> -->
+
+    <!-- <div class="experience"> <h3>Experience</h3>
             <h4>Research Assistant (Volunteer)- Neural Network based SLAM Project |
                 New Jersey Institute of Technology-----
                 July 2025 - August 2025</h4>
@@ -24,8 +353,8 @@
                         <li>Illustrated the temporal attention transformer architecture to improve clarity in team discussions and technical documentation.</li>
                         <li>Experimented with various undersampling and oversampling strategies to address dataset imbalance and
 evaluate effects on model training stability.</li>
-                    </ul>
-          
+                    </ul> -->
+<!--           
     </div>
         <div class="projects "> <h3>Projects I did in the last 1.5 years</h3>
             <div>
@@ -84,40 +413,22 @@ evaluate effects on model training stability.</li>
 
 
             </div>
-        </div>
+        </div> -->
 
       
         
 
-        <div class="education"> <h3>Education</h3>
-
-                    <h4>New Jersey Institute of Technology---------------- 2024 - Present</h4>
-                    <p>Masters of Sciences in Data Science Computational Track (GPA: 3.8) <br>
-                    Core Courses:</p>
-                    <ul>
-                        <li>Machine Learning, Database Management Design</li>
-                        <li>Natural Language Processin, Big Data</li>
-                        <li>Python, Applied Statistics</li>
-                    </ul>
-    
-                    <h4>Mahindra University, Hyderabad, India--------------- 2020 - 2024 </h4>
-                    <p>Bachelors of Technology in Computation and Mathematics (GPA:3.1)
-                    </p>
-                  
-         <hr>
-
               
-             <div class="skills">
+    <div class="skills">
             <h3>Skills</h3>
-            <ul>
-                <li>Python</li>  
-                <li>Pandas</li>
-                <li>Numpy</li>
-                <li>AWS EC2</li>
-                <li>Hadoop</li>
-                <li>TensorFlow</li>
-                <li>PyTorch</li>
-            </ul>
+           
+                <li>Languages: Python, R, C, C++, MATLAB, HTML,CSS</li> 
+                <br>
+                <li>Packages: TensorFlow, PyTorch, Keras,LLMs, Huggingface</li> 
+                <br>
+                <li>MLOps: github, </li>
+
+        
             <ul>
                 <li>Keras</li>
                 <li>SQL</li>
@@ -132,7 +443,7 @@ evaluate effects on model training stability.</li>
             </ul>
 
         </div> 
-        <div>
+        <!-- <div>
             <h3>Certifications</h3>
             <ul>
                 <li>International Risk Management Level-1 Certified</li>
@@ -162,17 +473,12 @@ evaluate effects on model training stability.</li>
             </ul>
         
         </div>
-    </div>
+    </div> -->
 
     </body>
-    <hr>
 
-    <footer>
-        <h4>Contact Info:</h4>
-        <a href="mailto:sa2975@njit.edu">Email</a>
-        <a href="https://www.linkedin.com/in/sabdha-ambati/" target="_blank">linkedin</a> 
-       <a href="https://github.com/JimSab068" target="_blank">github</a> </p>
-
+    <!-- <footer>
         
-    </footer>
+        
+    </footer> -->
     </html>

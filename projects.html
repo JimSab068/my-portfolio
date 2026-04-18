@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body style="background-color: rgb(158, 180, 240);">
+
+<svg class="svg-container">
+    <defs>
+      <filter id="turbulent-displace" colorInterpolationFilters="sRGB" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise1" seed="1" />
+        <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
+          <animate attributeName="dy" values="700; 0" dur="6s" repeatCount="indefinite" calcMode="linear" />
+        </feOffset>
+
+        <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise2" seed="1" />
+        <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
+          <animate attributeName="dy" values="0; -700" dur="12s" repeatCount="indefinite" calcMode="linear" />
+        </feOffset>
+
+        <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise1" seed="2" />
+        <feOffset in="noise1" dx="0" dy="0" result="offsetNoise3">
+          <animate attributeName="dx" values="490; 0" dur="12s" repeatCount="indefinite" calcMode="linear" />
+        </feOffset>
+
+        <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise2" seed="2" />
+        <feOffset in="noise2" dx="0" dy="0" result="offsetNoise4">
+          <animate attributeName="dx" values="0; -490" dur="12s" repeatCount="indefinite" calcMode="linear" />
+        </feOffset>
+
+        <feComposite in="offsetNoise1" in2="offsetNoise2" result="part1" />
+        <feComposite in="offsetNoise3" in2="offsetNoise4" result="part2" />
+        <feBlend in="part1" in2="part2" mode="color-dodge" result="combinedNoise" />
+
+        <feDisplacementMap in="SourceGraphic" in2="combinedNoise" scale="30" xChannelSelector="R" yChannelSelector="B" />
+      </filter>
+    </defs>
+  </svg>
+
+<!-- NAVBAR -->
+       <div class="options-container button-text-font">
+
+        <nav class="pink-button">
+        <a href="index.html" >Home</a>
+        </nav>
+        
+        <nav class="pink-button">
+        <a href="projects.html" class="active">Projects</a>
+        </nav>
+
+        <nav class="pink-button">
+        <a href="research.html">Experience and Research</a>
+        </nav>
+
+        <nav class="pink-button">
+        <a href="publication.html">Publication and Thesis</a>
+        </nav>
+
+        </div>
+
+
+<div class="suncatcher-container">
+  <div class="suncatcher">
+    <div class="string"></div>
+    <div class="crystal star">
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <h1 style="text-align: center; color: rgba(146, 29, 29, 0.959); margin-top: 40px;">Projects</h1> -->
+
+<div class="projects-grid">
+
+<a href="nlp.html"><div class="project-item">
+
+  <div class="card-container" >
+    <div class="inner-container" >
+      <div class="border-outer">
+        <div class="main-card"></div>
+      </div>
+      <div class="glow-layer-1"></div>
+      <div class="glow-layer-2"></div>
+    </div>
+
+    <div class="overlay-1"></div>
+    <div class="overlay-2"></div>
+    <div class="background-glow"></div>
+
+    <div class="content-container">
+      <div class="content-top">
+        <div class="scrollbar-glass">
+         NLP
+        </div>
+        <p class="title">Quantum Self Attention</p>
+      </div>
+
+      <hr class="divider" />
+
+      <div class="content-bottom">
+        <p class="description">Comparative study of Quantum Self Attention models, Naive Bayes, and Classical Self Attention models.</p>
+      </div>
+    </div>
+  </div>
+  </div></a>
+
+<a href="cv1.html"><div class="project-item" >
+
+  <div class="card-container">
+    <div class="inner-container">
+      <div class="border-outer">
+        <div class="main-card"></div>
+      </div>
+      <div class="glow-layer-1"></div>
+      <div class="glow-layer-2"></div>
+    </div>
+
+    <div class="overlay-1"></div>
+    <div class="overlay-2"></div>
+    <div class="background-glow"></div>
+
+    <div class="content-container">
+      <div class="content-top">
+        <div class="scrollbar-glass">
+         Computer Vision
+        </div>
+        <p class="title">Car dent tracking system</p>
+      </div>
+
+      <hr class="divider" />
+
+      <div class="content-bottom">
+        <p class="description">Engineered an end-to-end Computer Vision system to detect, segment, and temporally track vehicle damage in videos. </p>
+      </div>
+    </div>
+  </div>
+  </div></a> 
+
+<a href="cv2.html"><div class="project-item">
+
+  <div class="card-container">
+    <div class="inner-container">
+      <div class="border-outer">
+        <div class="main-card"></div>
+      </div>
+      <div class="glow-layer-1"></div>
+      <div class="glow-layer-2"></div>
+    </div>
+
+    <div class="overlay-1"></div>
+    <div class="overlay-2"></div>
+    <div class="background-glow"></div>
+
+    <div class="content-container">
+      <div class="content-top">
+        <div class="scrollbar-glass">
+         Computer Vision
+        </div>
+        <p class="title">Basketball Analysis</p>
+      </div>
+
+      <hr class="divider" />
+
+      <div class="content-bottom">
+        <p class="description">Developed an advanced, multi-modal computer vision system to automatically analyze and log sports video footage.</p>
+      </div>
+    </div>
+  </div>
+  </div></a>
+
+<a href="big-data.html"><div class="project-item">
+
+  <div class="card-container">
+    <div class="inner-container">
+      <div class="border-outer">
+        <div class="main-card"></div>
+      </div>
+      <div class="glow-layer-1"></div>
+      <div class="glow-layer-2"></div>
+    </div>
+
+    <div class="overlay-1"></div>
+    <div class="overlay-2"></div>
+    <div class="background-glow"></div>
+
+    <div class="content-container">
+      <div class="content-top">
+        <div class="scrollbar-glass">
+         Big Data
+        </div>
+        <p class="title">Flight data analysis</p>
+      </div>
+
+      <hr class="divider" />
+
+      <div class="content-bottom">
+        <p class="description">Engineered a distributed Big Data analytics pipeline using Hadoop MapReduce and Apache Oozie to process 22 years of flight data. </p>
+      </div>
+    </div>
+  </div>
+  </div></a>
+
+<a href="cv3.html"><div class="project-item">
+
+  <div class="card-container">
+    <div class="inner-container">
+      <div class="border-outer">
+        <div class="main-card"></div>
+      </div>
+      <div class="glow-layer-1"></div>
+      <div class="glow-layer-2"></div>
+    </div>
+
+    <div class="overlay-1"></div>
+    <div class="overlay-2"></div>
+    <div class="background-glow"></div>
+
+    <div class="content-container">
+      <div class="content-top">
+        <div class="scrollbar-glass">
+         Computer Vision
+        </div>
+        <p class="title">Computer Using Agent</p>
+      </div>
+
+      <hr class="divider" />
+
+      <div class="content-bottom">
+        <p class="description">Developed a Computer Using Agent (CUA) that acts as a real-time research companion for academic papers.</p>
+      </div>
+
+    </div>
+  </div>
+  </div></a>
+
+<a href="database.html"><div class="project-item">
+
+  <div class="card-container">
+    <div class="inner-container">
+      <div class="border-outer">
+        <div class="main-card"></div>
+      </div>
+      <div class="glow-layer-1"></div>
+      <div class="glow-layer-2"></div>
+    </div>
+
+    <div class="overlay-1"></div>
+    <div class="overlay-2"></div>
+    <div class="background-glow"></div>
+
+    <div class="content-container">
+      <div class="content-top">
+        <div class="scrollbar-glass">
+         Database
+        </div>
+        <p class="title">Database management</p>
+      </div>
+
+      <hr class="divider" />
+
+      <div class="content-bottom">
+        <p class="description">Co-developed a full-stack Textile Material Management application, taking ownership of the relational database architecture and frontend.</p>
+      </div>
+    </div>
+  </div>
+  </div></a>
+
+<a href="ml_dl.html"><div class="project-item">
+
+  <div class="card-container">
+    <div class="inner-container">
+      <div class="border-outer">
+        <div class="main-card"></div>
+      </div>
+      <div class="glow-layer-1"></div>
+      <div class="glow-layer-2"></div>
+    </div>
+
+    <div class="overlay-1"></div>
+    <div class="overlay-2"></div>
+    <div class="background-glow"></div>
+
+    <div class="content-container">
+      <div class="content-top">
+        <div class="scrollbar-glass">
+         ML and DL
+        </div>
+        <p class="title">Others</p>
+      </div>
+
+      <hr class="divider" />
+
+      <div class="content-bottom">
+        <p class="description"> <li>Equity Portfolio Management Strategy Simulation</li>
+          <li>Multimodal Emotion Recognition using GIFs and Images</li>
+          </p>
+      </div>
+    </div>
+  </div>
+  </div></a>
+</div>
+</body>
+
+</html>
