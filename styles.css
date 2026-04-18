@@ -162,10 +162,11 @@ footer a{
    
   }
   
-  .pink-button:hover {
+  .card-container:hover {
     background-color: rgb(158, 180, 240) ;
     border-color:  rgb(158, 180, 240);
     transform: translateY(-2px);
+    box-shadow: 2px 2px 2px 2px rgba(130, 36, 181, 0.699);
   }
 
 .intro {
@@ -464,7 +465,7 @@ body {
       var(--color-neutral-900)
     );
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 /* Inner container */
@@ -666,6 +667,7 @@ body {
 
 /* Typography */
 .title {
+  color: rgba(174, 40, 40, 0.9);
   font-size: 30px;
   font-weight: 500;
   margin-top: auto;
